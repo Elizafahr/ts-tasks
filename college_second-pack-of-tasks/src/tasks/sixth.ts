@@ -6,18 +6,18 @@ document.querySelector<HTMLDivElement>("#sixth")!.innerHTML = `
   <div class="Sixth">
   <h1>Шестое задание</h1> 
   <p>(начните вводить текст) Разработайте сценарий для веб-страницы, который переведет в верхний регистр первую букву каждого слова, следующего за точкой.</p>
-    <textarea id="textarea"></textarea>
+    <textarea id="textareaSix"></textarea>
      <ul id="sentences"></ul>
   </div>
 `; 
 
-const textarea: HTMLTextAreaElement = document.getElementById('textarea') as HTMLTextAreaElement;
-textarea.oninput = function(){
-  splitText();
+const textareaSix: HTMLTextAreaElement = document.getElementById('textareaSix') as HTMLTextAreaElement;
+textareaSix.oninput = function(){
+  splitTextSix();
 }
 
-function splitText(): void {
-  const textareaValue = textarea.value;
+function splitTextSix(): void {
+  const textareaValue = textareaSix.value;
   let arr : Array<string> = [];
   var splitted = textareaValue.split("."); 
   splitted.forEach(element => {

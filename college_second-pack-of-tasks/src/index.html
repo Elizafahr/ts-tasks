@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--2 Разработайте сценарий для веб-страницы, который формирует
+корзину выбранного посетителем товара. У посетителя есть возможность
+добавить товар в корзину, удалить товар, выбрать валюту, просмотреть
+стоимость выбранного товара и общую стоимость покупки.-->
+<label for="item">Выберите товар:</label>
+<input type="text" id="item" />
+<button id="addItemButton">Добавить товар</button>
+
+<ul id="cartItems"></ul>
+
+<label for="currency">Выберите валюту:</label>
+<select id="currency">
+  <option value="USD">USD</option>
+  <option value="EUR">EUR</option>
+  <option value="RUB">RUB</option>
+</select>
+
+<button id="calculateCostButton">Просмотреть стоимость</button>
+<p id="itemCost"></p>
+
+<button id="calculateTotalButton">Просмотреть общую стоимость</button>
+<p id="totalCost"></p>
+   <!--5 Разработайте сценарий для веб-страницы, который сможет
+осуществлять поиск по образцу и замену найденного фрагмента на заданный.
+Предусмотрите подсчет числа замен.-->
+<h1>task 5</h1>
+<div id="poisk" class="5">
+  <textarea name="" id="text5" cols="40" rows="10" ></textarea><br>
+  <p>какое слово заменить</p><input type="text" id="search"><br>
+  <p>на какое слово заменить</p><input type="text" id="replace">
+  <input type="button" id="but5" value="click">
+</div>
+<!--6 Разработайте сценарий для веб-страницы, который переведет в
+верхний регистр первую букву каждого слова, следующего за точкой.-->
+<h1>task 6</h1>
+<p>введите текст</p>
+<textarea id="txt6" ></textarea>
+<input type="button" id="but6" value="click">
+<p id="total6"></p>
+<!--7 Разработайте сценарий для веб-страницы, который проверяет
+введенный текст на соответствие фамилии и инициалов (использовать
+регулярные выражения).-->
+<h1>task 7</h1>
+<p>введите фамилию и инициалы</p>
+<input type="text" id="name7">
+<input type="button" value="click" id="but7">
+<!--8 Напишите сценарий, который по введенному дню рождения
+высчитывает и выводит возраст человека.-->
+<h1>task 8</h1>
+<p>введите др в формате ГГГГ-ММ-ДД</p>
+        <input type="text" id="bd8">
+        <input type="button" id="but8" value="click">
+        <p id="total8"></p>
+        <!--9 Напишите сценарий, который определяет число дней между двумя
+введенными датами.-->
+<h1>task 9</h1>
+<p>введите 1 дату в формате ГГГГ-ММ-ДД</p><input type="text" id="OneD">
+<p>введите 2 дату в формате ГГГГ-ММ-ДД</p><input type="text" id="twoD">
+<input type="button" id="twoD_but" value="click">
+<p id="twoD_P"></p>
+<!--10 Напишите сценарий, который выводит в таблице календарь на
+один месяц. Название месяца и год выбирает посетитель из
+соответствующего размещенного на веб-странице списка. Предусмотреть в
+сценарии возможность составления посетителем списка выбранных из
+календаря дат.-->
+<h1>task 10</h1>
+  <select name="" id="months">
+  <option value="01">Январь</option>
+  <option value="02">Февраль</option>
+  <option value="03">Март</option>
+  <option value="04">Апрель</option>
+  <option value="05">Май</option>
+  <option value="06">Июнь</option>
+  <option value="07">Июль</option>
+  <option value="08">Август</option>
+  <option value="09">Сентябрь</option>
+  <option value="10">Октябрь</option>
+  <option value="11">Ноябрь</option>
+  <option value="12">Декабрь</option>
+</select>
+<input type="text" id="year">
+<input type="button" value="click" id="but10">
+<div id="calendar"></div>
+<!--11 Напишите сценарий для всех страниц сайта, который размещает
+на каждой из них верхний заголовочный баннер и левую навигационную
+панель. Баннер для каждой страницы содержит соответствующий заголовок.-->
+<h1>task 11</h1>
+<header id="banner">
+  <h1 id="header">Заголовок страницы</h1>
+</header>
+
+<nav class="sidebar">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="contact.html">Контакты</a></li>
+  </ul>
+</nav>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
