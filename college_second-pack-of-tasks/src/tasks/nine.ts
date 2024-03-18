@@ -29,11 +29,9 @@ document.querySelector<HTMLDivElement>("#nine")!.innerHTML = `
 function getDaysDifference(date1: string, date2: string): number {
   const oneDay = 24 * 60 * 60 * 1000; // количество миллисекунд в одном дне
 
-  // Преобразование введенных дат в объекты Date
   const startDate = new Date(date1);
   const endDate = new Date(date2);
 
-  // Вычисление разницы между датами в днях
   const diffDays = Math.round(
     Math.abs((startDate.getTime() - endDate.getTime()) / oneDay)
   );

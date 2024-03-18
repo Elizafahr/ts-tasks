@@ -173,5 +173,4 @@ renderItems();
 renderCartItems();
 updateTotal();
 
-// Добавляем обработчик события для select элемента.
-currencySelect.addEventListener("change", changeCurrency);
+ currencySelect.addEventListener("change", changeCurrency);
